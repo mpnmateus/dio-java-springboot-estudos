@@ -13,7 +13,19 @@ public class ContaTerminal {
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
+        System.out.println("Olá! Por favor, digite seu nome: ");
+        String nomeCliente = scanner.next();
 
+        System.out.println("Digite o número da sua agência: ");
+        String agencia = scanner.next();
+
+        System.out.println("Digite o número da sua conta: ");
+        int numeroConta = scanner.nextInt();
+
+        double saldo = 237.48;
+
+        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco. " +
+                "Sua agência é " + agencia + ", conta " + numeroConta + " e seu saldo R$" + saldo + " já está disponível para saque.");
 
     }
 }
