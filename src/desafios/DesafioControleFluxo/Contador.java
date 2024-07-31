@@ -17,7 +17,7 @@ public class Contador {
             System.out.println("O valor digitado deve ser inteiro.");
         }
     }
-    static void contador (int parametroUm, int ParametroDois) {
+    static void contador (int parametroUm, int ParametroDois) throws ParametrosInvalidosException {
 
     }
 }
