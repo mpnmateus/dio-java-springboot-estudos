@@ -25,7 +25,6 @@ public class ProcessoSeletivoDois {
         }
         imprimirCandidatos(candidatosSelecionados);
     }
-
     static void imprimirCandidatos(String [] candidatosSelecionados){
         System.out.println("\nA lista de candidatos selecionados é: ");
         for (int i = 0; i < candidatosSelecionados.length; i++) {
@@ -33,8 +32,14 @@ public class ProcessoSeletivoDois {
                 System.out.println(candidatosSelecionados[i]);
             }
         }
+        //Forma alternativa usando for each
+        System.out.println("\nA lista de candidatos selecionados é: ");
+        for (String candidato : candidatosSelecionados) {
+            if (candidato != null) {
+                System.out.println(candidato);
+            }
+        }
     }
-
     static double valorPretendido(){
         return ThreadLocalRandom.current().nextDouble(1800, 2200);
     }
