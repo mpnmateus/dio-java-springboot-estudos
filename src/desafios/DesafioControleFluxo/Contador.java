@@ -1,0 +1,18 @@
+package desafios.DesafioControleFluxo;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Contador {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        try {
+            System.out.println("Digite o parâmetro 1: ");
+            int parametroUm = scan.nextInt();
+            System.out.println("Digite o parâmetro 2: ");
+            int parametroDois = scan.nextInt();
+        }
+        catch (InputMismatchException e) {
+            System.out.println("O valor digitado deve ser inteiro.");
+        }
+    }
+}
