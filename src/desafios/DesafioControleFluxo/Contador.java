@@ -21,7 +21,8 @@ public class Contador {
         if(parametroUm > parametroDois)
             throw new ParametrosInvalidosException();
 
-        for(int i = parametroUm; i <= parametroDois; i++)
-            System.out.println("Imprimindo número " + i);
+        int iteracoes = parametroDois - parametroUm;
+        for(int i = 1; i <= iteracoes; i++)
+            System.out.println("Imprimindo o número " + i);
     }
 }
