@@ -5,14 +5,19 @@ import java.util.Scanner;
 public class Contador {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Digite o parâmetro 1: ");
+        int parametroUm = scan.nextInt();
+        System.out.println("Digite o parâmetro 2: ");
+        int parametroDois = scan.nextInt();
+
         try {
-            System.out.println("Digite o parâmetro 1: ");
-            int parametroUm = scan.nextInt();
-            System.out.println("Digite o parâmetro 2: ");
-            int parametroDois = scan.nextInt();
+
         }
         catch (InputMismatchException e) {
             System.out.println("O valor digitado deve ser inteiro.");
         }
+    }
+    static void contador (int parametroUm, int ParametroDois) {
+
     }
 }
