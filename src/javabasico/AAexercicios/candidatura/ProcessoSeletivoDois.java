@@ -23,13 +23,18 @@ public class ProcessoSeletivoDois {
                 quantidadeCandidatos++;
             }
         }
+        imprimirCandidatos(candidatosSelecionados);
+    }
+
+    static void imprimirCandidatos(String [] candidatosSelecionados){
         System.out.println("\nA lista de candidatos selecionados é: ");
-        for (int i = 0; i < candidatos.length; i++) {
+        for (int i = 0; i < candidatosSelecionados.length; i++) {
             if (candidatosSelecionados[i] != null) {
                 System.out.println(candidatosSelecionados[i]);
             }
         }
     }
+
     static double valorPretendido(){
         return ThreadLocalRandom.current().nextDouble(1800, 2200);
     }
