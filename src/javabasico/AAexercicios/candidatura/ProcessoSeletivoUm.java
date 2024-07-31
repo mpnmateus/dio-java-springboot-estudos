@@ -5,13 +5,18 @@ import java.util.Scanner;
 public class ProcessoSeletivoUm {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double valorBaseSalarial = 2000;
+
         System.out.println("Digite o salário pretendido pelo candidato");
         double salarioPretendido = scan.nextDouble();
+        analisarCandidato(salarioPretendido);
 
-        analisarCandidato(valorBaseSalarial, salarioPretendido);
+        //Para testar as três condições
+        analisarCandidato(1900);
+        analisarCandidato(2000);
+        analisarCandidato(5000);
     }
-    static void analisarCandidato(double valorBaseSalarial, double salarioPretendido){
+    static void analisarCandidato(double salarioPretendido){
+        double valorBaseSalarial = 2000;
         if (valorBaseSalarial > salarioPretendido)
             System.out.println("Ligar para o candidato.");
         else if (valorBaseSalarial == salarioPretendido)
