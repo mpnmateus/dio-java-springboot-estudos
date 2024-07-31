@@ -11,13 +11,13 @@ public class Contador {
         int parametroDois = scan.nextInt();
 
         try {
-
+            contar(parametroUm, parametroDois);
         }
-        catch (InputMismatchException e) {
+        catch (ParametrosInvalidosException e) {
             System.out.println("O valor digitado deve ser inteiro.");
         }
     }
-    static void contador (int parametroUm, int ParametroDois) throws ParametrosInvalidosException {
+    static void contar (int parametroUm, int ParametroDois) throws ParametrosInvalidosException {
 
     }
 }
