@@ -14,10 +14,14 @@ public class Contador {
             contar(parametroUm, parametroDois);
         }
         catch (ParametrosInvalidosException e) {
-            System.out.println("O valor digitado deve ser inteiro.");
+            System.out.println("O segundo parâmetro deve ser maior que o primeiro.");
         }
     }
-    static void contar (int parametroUm, int ParametroDois) throws ParametrosInvalidosException {
+    static void contar (int parametroUm, int parametroDois) throws ParametrosInvalidosException {
+        if(parametroUm > parametroDois)
+            throw new ParametrosInvalidosException();
 
+        for(int i = parametroUm; i <= parametroDois; i++)
+            System.out.println("Imprimindo número " + i);
     }
 }
