@@ -1,4 +1,4 @@
-package desafios;
+package desafios.contabancaria;
 import java.util.Locale;
 import java.util.Scanner;
 
