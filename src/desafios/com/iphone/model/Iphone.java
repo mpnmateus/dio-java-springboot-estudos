@@ -27,7 +27,7 @@ public class Iphone implements AparelhoTelefonico, ReprodutorMusical, NavegadorI
     }
     @Override
     public void selecionarMusica(String musica){
-        System.out.println("Reproduzindo a música: " + musica + " através do iphone.");
+        System.out.println("Reproduzindo a música: '" + musica + "' através do iphone.");
     }
 
     //Métodos relacionados ao navegador de internet
