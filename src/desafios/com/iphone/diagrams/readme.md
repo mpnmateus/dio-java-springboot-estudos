@@ -1,3 +1,16 @@
+# Modelagem e Diagramação de um Componente iPhone
+
+## POO - Desafio
+Neste desafio, houve a modelagem e diagramação da representação UML do componente iPhone, abrangendo suas funcionalidades como Reprodutor Musical, Aparelho Telefônico e Navegador na Internet.
+
+#### Funcionalidades a Modelar
+1. **Reprodutor Musical**
+    - Métodos: `tocar()`, `pausar()`, `selecionarMusica(String musica)`
+2. **Aparelho Telefônico**
+    - Métodos: `ligar(String numero)`, `atender()`, `iniciarCorreioVoz()`
+3. **Navegador na Internet**
+    - Métodos: `exibirPagina(String url)`, `adicionarNovaAba()`, `atualizarPagina()`
+
 ### Diagrama UML - Iphone
 ```mermaid
 classDiagram
@@ -27,8 +40,3 @@ classDiagram
     iPhone --|> AparelhoTelefonico : Implements
     iPhone --|> NavegadorInternet : Implements
 
-### Explicação do Código Mermaid:
-
-1. **Classe `iPhone`**: Inclui todos os métodos especificados para as funcionalidades do iPhone.
-2. **Classes `ReprodutorMusical`, `AparelhoTelefonico`, `NavegadorInternet`**: Contêm métodos relacionados às suas respectivas funcionalidades.
-3. **Relacionamentos**: As setas `--|>` indicam que a classe `iPhone` implementa as interfaces ou funcionalidades das outras classes.
